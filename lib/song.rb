@@ -17,9 +17,9 @@ def initialize(name,artist,genre)
     @@count
   end
  def self.genres
-   @@genres
+   @@genres.uniq
  end
  def self.artist
-   @@artists
+   @@artists.uniq
  end
 end
