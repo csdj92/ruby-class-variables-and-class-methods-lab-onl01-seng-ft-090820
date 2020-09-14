@@ -16,7 +16,7 @@ def initialize(name,artist,genre)
   @@song_count +=1
   end
   
-  def self.song_count
+  def self.count
     @@song_count
   end
  def self.genres
