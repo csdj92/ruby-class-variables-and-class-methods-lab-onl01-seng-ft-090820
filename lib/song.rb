@@ -4,8 +4,8 @@ attr_accessor :artist, :name, :genre
 @@genres = []
 @@artists = []
 
-def initialize(name,artist,genre)
-  @name=name
+def initialize(name_of_song,artist,genre)
+  @name=name_of_song
   @artist=artist
   @genre=genre
   @@genres<< @genre
