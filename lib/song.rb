@@ -1,11 +1,14 @@
+require 'pry'
+
+
 class Song 
 attr_accessor :artist, :name, :genre 
 @@song_count = 0
 @@genres = []
 @@artists = []
 
-def initialize(name_of_song,artist,genre)
-  @name=name_of_song
+def initialize(name,artist,genre)
+  @name=name
   @artist=artist
   @genre=genre
   @@genres<< @genre
@@ -13,7 +16,7 @@ def initialize(name_of_song,artist,genre)
   @@song_count +=1
   end
   
-  def self.count
+  def self.song_count
     @@song_count
   end
  def self.genres
